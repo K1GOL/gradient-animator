@@ -1,4 +1,4 @@
-const gradientAnimation = (element, opts) => {
+export const gradientAnimator = (element, opts) => {
   let startColor = `linear-gradient(${opts.angle.start}deg,`
   opts.colors.forEach(color => {
     startColor += ` rgb(${color.start.r}, ${color.start.g}, ${color.start.b}),`
@@ -22,5 +22,3 @@ const gradientAnimation = (element, opts) => {
 const lerp = (a, b, alpha) => {
   return a + alpha * (b - a)
 }
-
-window.gradientAnimator = gradientAnimation
