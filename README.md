@@ -6,7 +6,7 @@ Simple JS animator for CSS color gradients.
 
 ```html
 <script type="module">
-  import { gradientAnimator } from './gradientAnimator.mjs'
+  import { gradientAnimator } from './gradientAnimator.js'
 
   window.onload = () => {
     gradientAnimator(document.getElementById('container'), {
